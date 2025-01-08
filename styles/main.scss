@@ -13,7 +13,6 @@
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-  background-color: inherit;
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -37,6 +36,7 @@ body {
   font-weight: $baseFontWeight;
   font-family: $fontPoppins;
   color: $black;
+  background-color: $bgWhite;
 }
 
 .wrapper {
@@ -75,17 +75,277 @@ button {
 /*----inclusive-------------------------------------------*/
 
 .inclusive {
-  height: 1081px;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 1080px;
   width: 100%;
   position: relative;
 
-  &__bg {
+  &__bg, &__bgImage {
     position: absolute;
     right: 0;
     top: 0;
   }
-  &__container {}
+  &__bgImage {
+    top: 65px;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    gap: 60px;
+    padding: 0 0 100px 0;
+  }
+  &__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 13px 0;
+
+    h1 {
+      font-size: 74px;
+      font-family: $fontOpenSans;
+      line-height: 120%;
+      margin: 0 0 40px 0;
+    }
+  }
+	&__categories {
+    display: flex;
+    align-items: center;
+    margin: 0 0 14px 0;
+  }
+	&__category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 11px;
+    background-color: $white;
+    border-radius: 48px;
+    
+    &__circle {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: $black;
+
+      &--green {
+        background-color: $green;
+      }
+    }
+  }
+	&__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+	&__button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+    &--let {
+      padding: 20px;
+      background-color: $black;
+      color: $white;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+    &--how {
+      gap: 10px;
+      background-color: inherit;
+
+      div {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $grey;
+
+        div {
+          height: 40px;
+          width: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: $black;
+        }
+      }
+      span {
+        text-decoration: underline;
+        width: 124px;
+      }
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+	&__images {
+    margin: 100px 0 0 0;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+  }
+	&__image {
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--bw {
+      width: 194px;
+      height: 150px;
+      background-image: url("./../public/images/inclusive/bwGirl.jpg");
+    }
+    &--money {
+      width: 210px;
+      height: 196px;
+      background-image: url("./../public/images/inclusive/moneyGirl.jpg");
+    }
+  }
+
+  &__right {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+      position: absolute;
+      left: 0;
+      bottom: 172px;
+      width: 242px;
+      height: 97px;
+      justify-content: center;
+      background-color: $black;
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      border-radius: 20px;
+      
+      span {
+        height: 52px;
+        width: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $green;
+        border-radius: 10px;
+        text-decoration: underline;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+          color: $white;
+        }
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      width: 411px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 108px 0 0 0;
+
+      h2 {
+        font-size: 64px;
+        font-weight: 400;
+        font-family: $fontOpenSans;
+        color: $white;
+        margin: 360px 0 44px 0;
+      }
+    }
+  }
+  &__notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 52px;
+    background-color: $white;
+    gap: 10px;
+    border-radius: 46px;
+
+    div {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $black;
+      border-radius: 50%;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &__statistics {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+
+        h4 {
+          font-size: 16px;
+          font-weight: 400;
+          color: $white;
+        }
+      }
+      span {
+        width: 1px;
+        height: 30px;
+        background-color: $white;
+      }
+    }
+    &__button {
+      width: 66px;
+      height: 66px;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+    }
+  }
+  &__cards {
+    position: absolute;
+    left: 25px;
+  }
 }
+
 .header {
   width: 100%;
   height: 160px;
@@ -168,6 +428,9 @@ button {
     &__bg {
       right: -320px;
     }
+    &__bgImage {
+      right: -220px;
+    }
   }
   .header {
     
@@ -182,6 +445,9 @@ button {
 
     &__bg {
       right: -420px;
+    }
+    &__bgImage {
+      right: -320px;
     }
   }
   .header {
@@ -199,7 +465,7 @@ button {
 @media (max-width: 767px ) {
   .inclusive {
 
-    &__bg {
+    &__bg, &__bgImage {
       display: none;
     }
   }

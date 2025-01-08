@@ -9,7 +9,6 @@
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-  background-color: inherit;
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -33,6 +32,7 @@ body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #000000;
+  background-color: #F8F8F8;
 }
 
 .wrapper {
@@ -68,15 +68,260 @@ button:active {
 
 /*----inclusive-------------------------------------------*/
 .inclusive {
-  height: 1081px;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 1080px;
   width: 100%;
   position: relative;
 }
-.inclusive__bg {
+.inclusive__bg, .inclusive__bgImage {
   position: absolute;
   right: 0;
   top: 0;
 }
+.inclusive__bgImage {
+  top: 65px;
+}
+.inclusive__container {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  gap: 60px;
+  padding: 0 0 100px 0;
+}
+.inclusive__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 13px 0;
+}
+.inclusive__left h1 {
+  font-size: 74px;
+  font-family: "Public Sans", sans-serif;
+  line-height: 120%;
+  margin: 0 0 40px 0;
+}
+.inclusive__categories {
+  display: flex;
+  align-items: center;
+  margin: 0 0 14px 0;
+}
+.inclusive__category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 11px;
+  background-color: #ffffff;
+  border-radius: 48px;
+}
+.inclusive__category__circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.inclusive__category__circle--green {
+  background-color: #ACE238;
+}
+.inclusive__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.inclusive__button {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.inclusive__button--let {
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.inclusive__button--how {
+  gap: 10px;
+  background-color: inherit;
+}
+.inclusive__button--how div {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+.inclusive__button--how div div {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.inclusive__button--how span {
+  text-decoration: underline;
+  width: 124px;
+}
+.inclusive__button--how:hover {
+  filter: none;
+}
+.inclusive__images {
+  margin: 100px 0 0 0;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.inclusive__image {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inclusive__image--bw {
+  width: 194px;
+  height: 150px;
+  background-image: url("./../public/images/inclusive/bwGirl.jpg");
+}
+.inclusive__image--money {
+  width: 210px;
+  height: 196px;
+  background-image: url("./../public/images/inclusive/moneyGirl.jpg");
+}
+.inclusive__right {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inclusive__right__button {
+  position: absolute;
+  left: 0;
+  bottom: 172px;
+  width: 242px;
+  height: 97px;
+  justify-content: center;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-radius: 20px;
+}
+.inclusive__right__button span {
+  height: 52px;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #ACE238;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+.inclusive__right__button div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.inclusive__right__button div h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.inclusive__right__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 411px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 108px 0 0 0;
+}
+.inclusive__right__content h2 {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Public Sans", sans-serif;
+  color: #ffffff;
+  margin: 360px 0 44px 0;
+}
+.inclusive__notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 52px;
+  background-color: #ffffff;
+  gap: 10px;
+  border-radius: 46px;
+}
+.inclusive__notification div {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.inclusive__notification span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.inclusive__statistics {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+}
+.inclusive__statistics__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.inclusive__statistics__info div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+.inclusive__statistics__info div h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.inclusive__statistics__info span {
+  width: 1px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.inclusive__statistics__button {
+  width: 66px;
+  height: 66px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.inclusive__cards {
+  position: absolute;
+  left: 25px;
+}
+
 .header {
   width: 100%;
   height: 160px;
@@ -152,6 +397,9 @@ button:active {
   .inclusive__bg {
     right: -320px;
   }
+  .inclusive__bgImage {
+    right: -220px;
+  }
   .header__nav {
     margin: 0 auto 0 auto;
   }
@@ -159,6 +407,9 @@ button:active {
 @media (max-width: 1023px) {
   .inclusive__bg {
     right: -420px;
+  }
+  .inclusive__bgImage {
+    right: -320px;
   }
   .header__li {
     font-size: 16px;
@@ -169,7 +420,7 @@ button:active {
   }
 }
 @media (max-width: 767px) {
-  .inclusive__bg {
+  .inclusive__bg, .inclusive__bgImage {
     display: none;
   }
   .header {
