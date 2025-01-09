@@ -861,6 +861,8 @@ button {
     border: 1px solid $green;
     padding: 50px 66px;
     border-radius: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   &__offer {
     display: flex;
@@ -893,6 +895,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
   }
   &__step {
     display: flex;
@@ -1107,6 +1111,18 @@ button {
           width: 100%;
         }
       }
+    }
+  }
+  .howItWork {
+    &__offers {
+      padding: 30px;
+      align-items: center;
+    }
+    &__steps {
+      justify-content: center;
+    }
+    &__step {
+      align-items: center;
     }
   }
 }

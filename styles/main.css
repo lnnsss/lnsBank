@@ -801,6 +801,8 @@ button:active {
   border: 1px solid #ACE238;
   padding: 50px 66px;
   border-radius: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .howItWork__offer {
   display: flex;
@@ -830,6 +832,8 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .howItWork__step {
   display: flex;
@@ -999,6 +1003,16 @@ button:active {
   }
   .about__content__block--white {
     width: 100%;
+  }
+  .howItWork__offers {
+    padding: 30px;
+    align-items: center;
+  }
+  .howItWork__steps {
+    justify-content: center;
+  }
+  .howItWork__step {
+    align-items: center;
   }
 }
 @media (max-width: 423px) {
