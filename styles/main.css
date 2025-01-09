@@ -647,6 +647,7 @@ button:active {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about__content__block {
   display: flex;
@@ -762,6 +763,10 @@ button:active {
   border-radius: 10px;
 }
 
+/*----howItWork-------------------------------------------*/
+.howItWork {
+  width: 100%;
+}
 /*----media-------------------------------------------*/
 @media (max-width: 1439px) {
   .inclusive__bg {
@@ -791,6 +796,22 @@ button:active {
     gap: 20px;
     justify-content: space-around;
   }
+  .about__header {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+  .about__header__peopleJoined {
+    margin: 0;
+  }
+  .about__content {
+    justify-content: center;
+    gap: 30px;
+  }
+  .about__content__block--white {
+    width: 80%;
+  }
 }
 @media (max-width: 1023px) {
   .inclusive__bg {
@@ -815,6 +836,9 @@ button:active {
     align-items: center;
     text-align: center;
     gap: 40px;
+  }
+  .tag {
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -868,6 +892,9 @@ button:active {
   }
   .header__burger {
     display: flex;
+  }
+  .about__content__block--white {
+    width: 100%;
   }
 }
 @media (max-width: 423px) {
