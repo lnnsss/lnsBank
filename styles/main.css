@@ -590,7 +590,7 @@ button:active {
 /*----about-------------------------------------------*/
 .about {
   width: 100%;
-  padding: 150px 0 0 0;
+  padding: 150px 0 180px 0;
 }
 .about__container {
   display: flex;
@@ -765,8 +765,112 @@ button:active {
 
 /*----howItWork-------------------------------------------*/
 .howItWork {
+  position: relative;
   width: 100%;
 }
+.howItWork__container {
+  position: relative;
+  z-index: 2;
+  padding: 36px 0 101px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howItWork__container .tag {
+  margin: 0 0 8px 0;
+}
+.howItWork__container h2 {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 45px 0;
+}
+.howItWork__cards {
+  width: 100%;
+  height: auto;
+}
+.howItWork__offers {
+  margin-top: -161px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242424;
+  border: 1px solid #ACE238;
+  padding: 50px 66px;
+  border-radius: 40px;
+}
+.howItWork__offer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.howItWork__offer div {
+  height: 62px;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1D1D1D;
+  border-radius: 20px;
+}
+.howItWork__offer h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.howItWork__offer--active div {
+  background-color: #ACE238;
+}
+.howItWork__steps {
+  margin: 61px 0 0 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.howItWork__step {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.howItWork__step span {
+  width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+}
+.howItWork__step h4 {
+  color: #ffffff;
+  font-family: "Public Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.howItWork__step__text {
+  display: flex;
+  flex-direction: column;
+}
+.howItWork__step__text div {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.howItWork__bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*----media-------------------------------------------*/
 @media (max-width: 1439px) {
   .inclusive__bg {
