@@ -95,6 +95,7 @@ button:active {
   height: 1080px;
   width: 100%;
   position: relative;
+  padding-bottom: 100px;
 }
 .inclusive__bg, .inclusive__bgImage {
   position: absolute;
@@ -111,7 +112,6 @@ button:active {
   height: 100%;
   display: flex;
   gap: 60px;
-  padding-bottom: 100px;
 }
 .inclusive__left {
   height: 100%;
@@ -1299,12 +1299,21 @@ button:active {
     flex-direction: column;
     align-items: start;
   }
+  .inclusive__right {
+    display: none;
+  }
+  .inclusive__left {
+    width: 100%;
+  }
   .header__li {
     font-size: 16px;
   }
   .header__button {
     padding: 10px;
     font-size: 12px;
+  }
+  .service {
+    padding: 50px 0 0 0;
   }
   .service__header {
     flex-direction: column;
@@ -1314,6 +1323,12 @@ button:active {
   }
   .tag {
     margin-right: 0;
+  }
+  .whyChooseUs {
+    padding: 80px 0 50px 0;
+  }
+  .whyChooseUs__container {
+    gap: 50px;
   }
   .whyChooseUs__main {
     align-items: center;
@@ -1384,8 +1399,15 @@ button:active {
   }
 }
 @media (max-width: 767px) {
+  .inclusive {
+    padding-bottom: 30px;
+    height: auto;
+  }
   .inclusive__bg, .inclusive__bgImage {
     display: none;
+  }
+  .inclusive__left h1 {
+    font-size: 56px;
   }
   .inclusive__right__content {
     display: none;
@@ -1402,10 +1424,19 @@ button:active {
   }
   .header {
     height: 100px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 99;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
   }
   .header__nav {
     transition: 0.5s;
     position: absolute;
+    z-index: 99;
     top: 100px;
     left: -100%;
     background-color: #ffffff;
@@ -1435,8 +1466,14 @@ button:active {
   .header__burger {
     display: flex;
   }
+  .about {
+    padding: 50px 0 80px 0;
+  }
   .about__content__block--white {
     width: 100%;
+  }
+  .howItWork__container h2 {
+    font-size: 42px;
   }
   .howItWork__offers {
     padding: 30px;
