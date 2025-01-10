@@ -767,11 +767,11 @@ button:active {
 .howItWork {
   position: relative;
   width: 100%;
+  padding: 36px 0 101px 0;
 }
 .howItWork__container {
   position: relative;
   z-index: 2;
-  padding: 36px 0 101px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -875,6 +875,258 @@ button:active {
   height: 100%;
 }
 
+/*----whyChooseUs-------------------------------------------*/
+.whyChooseUs {
+  width: 100%;
+  padding: 180px 0 150px 0;
+}
+.whyChooseUs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+.whyChooseUs__top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.whyChooseUs__main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.whyChooseUs__main .tag {
+  margin: 0;
+}
+.whyChooseUs__main h2 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 28px 0 30px 0;
+}
+.whyChooseUs__main__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.whyChooseUs__main__block {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  border-bottom: 1px solid #DBDBDB;
+  font-size: 32px;
+  font-weight: 400;
+}
+.whyChooseUs__image {
+  width: 411px;
+  min-height: 622px;
+  height: auto;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+}
+.whyChooseUs__re {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: auto;
+  width: 303px;
+}
+.whyChooseUs__re__block {
+  margin-top: 179px;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  height: 443px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0 0 22px 0;
+  gap: 47px;
+}
+.whyChooseUs__re__block h3 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+.whyChooseUs__re__block button {
+  width: 153px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.whyChooseUs__re img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+.whyChooseUs__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.whyChooseUs__bottom h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Public Sans", sans-serif;
+}
+.whyChooseUs__comments {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.whyChooseUs__comment {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.whyChooseUs__comment p {
+  margin: 24px 0;
+}
+.whyChooseUs__comment hr {
+  width: 100%;
+  height: 1px;
+  background-color: #E3E3E3;
+  margin-bottom: 35px;
+}
+.whyChooseUs__comment__author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.whyChooseUs__comment__author__image {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+.whyChooseUs__comment__author__text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.whyChooseUs__comment__author__text h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.whyChooseUs__comment:hover {
+  bottom: 50px;
+}
+
+/*----oneTap-------------------------------------------*/
+.oneTap {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 34px 0;
+}
+.oneTap__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+.oneTap__header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60px;
+}
+.oneTap__header h2 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Public Sans", sans-serif;
+}
+.oneTap__header button {
+  width: 121px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #000000;
+}
+.oneTap__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.oneTap__main__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.oneTap__main__block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.oneTap__main__block__info div {
+  display: flex;
+  align-items: center;
+}
+.oneTap__main__block__info div span {
+  height: 69px;
+  width: 69px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  border: 3px solid #ffffff;
+  transition: 0.5s;
+}
+.oneTap__main__block__info div span:not(:first-child) {
+  margin-left: -20px;
+}
+.oneTap__main__block__info div span:hover {
+  border-color: #ACE238;
+}
+.oneTap__main__block__statistic {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.oneTap__main__block__statistic div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.oneTap__main__block__statistic div h4 {
+  font-size: 16px;
+}
+.oneTap__main__block__statistic span {
+  width: 1px;
+  height: 31px;
+  background-color: #1D1D1D;
+}
+
 /*----media-------------------------------------------*/
 @media (max-width: 1439px) {
   .inclusive__bg {
@@ -920,6 +1172,17 @@ button:active {
   .about__content__block--white {
     width: 80%;
   }
+  .oneTap__container {
+    flex-direction: column;
+  }
+  .oneTap__header {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .oneTap__main {
+    width: 100%;
+  }
 }
 @media (max-width: 1023px) {
   .inclusive__bg {
@@ -947,6 +1210,16 @@ button:active {
   }
   .tag {
     margin-right: 0;
+  }
+  .whyChooseUs__main {
+    align-items: center;
+    text-align: center;
+  }
+  .whyChooseUs__comments {
+    flex-wrap: wrap;
+  }
+  .whyChooseUs__comment {
+    width: 400px;
   }
 }
 @media (max-width: 767px) {
@@ -1014,11 +1287,18 @@ button:active {
   .howItWork__step {
     align-items: center;
   }
+  .oneTap__main__block {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 423px) {
   .inclusive__buttons {
     flex-direction: column;
     align-items: start;
+  }
+  .whyChooseUs__comment {
+    width: 100%;
   }
 }
 
