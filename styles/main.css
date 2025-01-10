@@ -1127,6 +1127,109 @@ button:active {
   background-color: #1D1D1D;
 }
 
+/*----footer-------------------------------------------*/
+.footer {
+  width: 100%;
+  padding: 150px 0 80px 0;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 395px;
+}
+.footer__left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 130px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 6px 96px;
+  max-height: 140px;
+}
+.footer__right {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+.footer__contacts h4 {
+  font-size: 12px;
+}
+.footer__contacts ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px 100px;
+  max-height: 65px;
+  font-size: 14px;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 96px 20px;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__social h4 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer__social__blocks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__social__blocks a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1D1D1D;
+}
+.footer__bottom {
+  margin: 134px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer__bottom div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.footer__bottom div span {
+  font-weight: 500;
+}
+
 /*----media-------------------------------------------*/
 @media (max-width: 1439px) {
   .inclusive__bg {
